@@ -578,11 +578,11 @@ task.spawn(C_12);
 -- StarterGui.eat.ugi.Frame.uf.TextButton.TeleportOnClick
 local function C_14()
 local script = G2L["14"];
-	local button = script.Parent
+	local buttonl = script.Parent
 	local Players = game:GetService("Players")
-	local teleportCFrame = CFrame.new(-75.29405975341797, -16.98878288269043, -400.965087890625)
+	local teleportCFrame = CFrame.new(215.9356231689453, -10.112844467163086, -438.0665283203125)
 	
-	button.MouseButton1Click:Connect(function()
+	buttonl.MouseButton1Click:Connect(function()
 	    local player = Players.LocalPlayer
 	    local character = player.Character or player.CharacterAdded:Wait()
 	    local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
