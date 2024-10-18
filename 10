@@ -590,7 +590,7 @@ local script = G2L["14"];
 	    local originalCFrame = humanoidRootPart.CFrame
 	    humanoidRootPart.CFrame = teleportCFrame
 	    
-	    task.wait()  -- Wait for 5 seconds before teleporting back
+	    task.wait(0.05)  -- Wait for 5 seconds before teleporting back
 	    humanoidRootPart.CFrame = originalCFrame
 	end)
 	
