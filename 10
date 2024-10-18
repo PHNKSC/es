@@ -1,5 +1,13 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
 
--- Instances: 76 | Scripts: 17 | Modules: 0 | Tags: 0
+-- Instances: 77 | Scripts: 18 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.eat
@@ -62,38 +70,38 @@ G2L["9"]["CellSize"] = UDim2.new(0, 100, 0, 50);
 G2L["9"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
--- StarterGui.eat.ugi.Frame.btnefe
+-- StarterGui.eat.ugi.Frame.uf
 G2L["a"] = Instance.new("Frame", G2L["8"]);
 G2L["a"]["BorderSizePixel"] = 0;
 G2L["a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["a"]["Size"] = UDim2.new(0.32081, 0, 0.17043, 0);
 G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a"]["Name"] = [[btnefe]];
+G2L["a"]["Name"] = [[uf]];
 G2L["a"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.eat.ugi.Frame.btnefe.UIStroke
+-- StarterGui.eat.ugi.Frame.uf.UIStroke
 G2L["b"] = Instance.new("UIStroke", G2L["a"]);
 G2L["b"]["Thickness"] = 2.4;
 G2L["b"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
--- StarterGui.eat.ugi.Frame.btnefe.UIStroke.UIGradient
+-- StarterGui.eat.ugi.Frame.uf.UIStroke.UIGradient
 G2L["c"] = Instance.new("UIGradient", G2L["b"]);
 G2L["c"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(39, 39, 39)),ColorSequenceKeypoint.new(0.284, Color3.fromRGB(41, 41, 41)),ColorSequenceKeypoint.new(0.486, Color3.fromRGB(75, 255, 244)),ColorSequenceKeypoint.new(0.785, Color3.fromRGB(41, 41, 41)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(43, 43, 43))};
 
 
--- StarterGui.eat.ugi.Frame.btnefe.UIStroke.UIGradient.LocalScript
+-- StarterGui.eat.ugi.Frame.uf.UIStroke.UIGradient.LocalScript
 G2L["d"] = Instance.new("LocalScript", G2L["c"]);
 
 
 
--- StarterGui.eat.ugi.Frame.btnefe.UICorner
+-- StarterGui.eat.ugi.Frame.uf.UICorner
 G2L["e"] = Instance.new("UICorner", G2L["a"]);
 
 
 
--- StarterGui.eat.ugi.Frame.btnefe.TextButton
+-- StarterGui.eat.ugi.Frame.uf.TextButton
 G2L["f"] = Instance.new("TextButton", G2L["a"]);
 G2L["f"]["TextWrapped"] = true;
 G2L["f"]["BorderSizePixel"] = 0;
@@ -106,425 +114,431 @@ G2L["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.Fo
 G2L["f"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["f"]["BackgroundTransparency"] = 1;
 G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f"]["Text"] = [[UNFIRE]];
 
 
--- StarterGui.eat.ugi.Frame.btnefe.TextButton.UIStroke
+-- StarterGui.eat.ugi.Frame.uf.TextButton.UIStroke
 G2L["10"] = Instance.new("UIStroke", G2L["f"]);
 G2L["10"]["Thickness"] = 0.9;
 G2L["10"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
--- StarterGui.eat.ugi.Frame.btnefe.TextButton.UIStroke.UIGradient
+-- StarterGui.eat.ugi.Frame.uf.TextButton.UIStroke.UIGradient
 G2L["11"] = Instance.new("UIGradient", G2L["10"]);
 G2L["11"]["Offset"] = Vector2.new(0, 2);
 G2L["11"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.284, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.486, Color3.fromRGB(75, 255, 244)),ColorSequenceKeypoint.new(0.785, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
 
--- StarterGui.eat.ugi.Frame.btnefe.TextButton.UIStroke.UIGradient.LocalScript
+-- StarterGui.eat.ugi.Frame.uf.TextButton.UIStroke.UIGradient.LocalScript
 G2L["12"] = Instance.new("LocalScript", G2L["11"]);
 
 
 
--- StarterGui.eat.ugi.Frame.btnefe.TextButton.UIPadding
+-- StarterGui.eat.ugi.Frame.uf.TextButton.UIPadding
 G2L["13"] = Instance.new("UIPadding", G2L["f"]);
 G2L["13"]["PaddingTop"] = UDim.new(0, 5);
 G2L["13"]["PaddingBottom"] = UDim.new(0, 7);
 
 
+-- StarterGui.eat.ugi.Frame.uf.TextButton.TeleportOnClick
+G2L["14"] = Instance.new("LocalScript", G2L["f"]);
+G2L["14"]["Name"] = [[TeleportOnClick]];
+
+
 -- StarterGui.eat.ugi.Frame.lava
-G2L["14"] = Instance.new("Frame", G2L["8"]);
-G2L["14"]["BorderSizePixel"] = 0;
-G2L["14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["14"]["Size"] = UDim2.new(0.32081, 0, 0.17043, 0);
-G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["14"]["Name"] = [[lava]];
-G2L["14"]["BackgroundTransparency"] = 1;
+G2L["15"] = Instance.new("Frame", G2L["8"]);
+G2L["15"]["BorderSizePixel"] = 0;
+G2L["15"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15"]["Size"] = UDim2.new(0.32081, 0, 0.17043, 0);
+G2L["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15"]["Name"] = [[lava]];
+G2L["15"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.eat.ugi.Frame.lava.UIStroke
-G2L["15"] = Instance.new("UIStroke", G2L["14"]);
-G2L["15"]["Thickness"] = 2.4;
-G2L["15"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["16"] = Instance.new("UIStroke", G2L["15"]);
+G2L["16"]["Thickness"] = 2.4;
+G2L["16"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
 -- StarterGui.eat.ugi.Frame.lava.UIStroke.UIGradient
-G2L["16"] = Instance.new("UIGradient", G2L["15"]);
-G2L["16"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(39, 39, 39)),ColorSequenceKeypoint.new(0.284, Color3.fromRGB(41, 41, 41)),ColorSequenceKeypoint.new(0.486, Color3.fromRGB(75, 255, 244)),ColorSequenceKeypoint.new(0.785, Color3.fromRGB(41, 41, 41)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(43, 43, 43))};
+G2L["17"] = Instance.new("UIGradient", G2L["16"]);
+G2L["17"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(39, 39, 39)),ColorSequenceKeypoint.new(0.284, Color3.fromRGB(41, 41, 41)),ColorSequenceKeypoint.new(0.486, Color3.fromRGB(75, 255, 244)),ColorSequenceKeypoint.new(0.785, Color3.fromRGB(41, 41, 41)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(43, 43, 43))};
 
 
 -- StarterGui.eat.ugi.Frame.lava.UIStroke.UIGradient.LocalScript
-G2L["17"] = Instance.new("LocalScript", G2L["16"]);
+G2L["18"] = Instance.new("LocalScript", G2L["17"]);
 
 
 
 -- StarterGui.eat.ugi.Frame.lava.UICorner
-G2L["18"] = Instance.new("UICorner", G2L["14"]);
+G2L["19"] = Instance.new("UICorner", G2L["15"]);
 
 
 
 -- StarterGui.eat.ugi.Frame.lava.TextButton
-G2L["19"] = Instance.new("TextButton", G2L["14"]);
-G2L["19"]["TextWrapped"] = true;
-G2L["19"]["BorderSizePixel"] = 0;
-G2L["19"]["TextTransparency"] = 1;
-G2L["19"]["TextSize"] = 14;
-G2L["19"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["19"]["TextScaled"] = true;
-G2L["19"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["19"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["19"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["19"]["BackgroundTransparency"] = 1;
-G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["19"]["Text"] = [[FIRE]];
+G2L["1a"] = Instance.new("TextButton", G2L["15"]);
+G2L["1a"]["TextWrapped"] = true;
+G2L["1a"]["BorderSizePixel"] = 0;
+G2L["1a"]["TextTransparency"] = 1;
+G2L["1a"]["TextSize"] = 14;
+G2L["1a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a"]["TextScaled"] = true;
+G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1a"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["1a"]["BackgroundTransparency"] = 1;
+G2L["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a"]["Text"] = [[FIRE]];
 
 
 -- StarterGui.eat.ugi.Frame.lava.TextButton.UIStroke
-G2L["1a"] = Instance.new("UIStroke", G2L["19"]);
-G2L["1a"]["Thickness"] = 0.9;
-G2L["1a"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["1b"] = Instance.new("UIStroke", G2L["1a"]);
+G2L["1b"]["Thickness"] = 0.9;
+G2L["1b"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
 -- StarterGui.eat.ugi.Frame.lava.TextButton.UIStroke.UIGradient
-G2L["1b"] = Instance.new("UIGradient", G2L["1a"]);
-G2L["1b"]["Offset"] = Vector2.new(0, 2);
-G2L["1b"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.284, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.486, Color3.fromRGB(75, 255, 244)),ColorSequenceKeypoint.new(0.785, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+G2L["1c"] = Instance.new("UIGradient", G2L["1b"]);
+G2L["1c"]["Offset"] = Vector2.new(0, 2);
+G2L["1c"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.284, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.486, Color3.fromRGB(75, 255, 244)),ColorSequenceKeypoint.new(0.785, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
 
 -- StarterGui.eat.ugi.Frame.lava.TextButton.UIStroke.UIGradient.LocalScript
-G2L["1c"] = Instance.new("LocalScript", G2L["1b"]);
+G2L["1d"] = Instance.new("LocalScript", G2L["1c"]);
 
 
 
 -- StarterGui.eat.ugi.Frame.lava.TextButton.UIPadding
-G2L["1d"] = Instance.new("UIPadding", G2L["19"]);
-G2L["1d"]["PaddingTop"] = UDim.new(0, 5);
-G2L["1d"]["PaddingBottom"] = UDim.new(0, 7);
+G2L["1e"] = Instance.new("UIPadding", G2L["1a"]);
+G2L["1e"]["PaddingTop"] = UDim.new(0, 5);
+G2L["1e"]["PaddingBottom"] = UDim.new(0, 7);
 
 
 -- StarterGui.eat.ugi.Frame.lava.TextButton.TeleportOnClick
-G2L["1e"] = Instance.new("LocalScript", G2L["19"]);
-G2L["1e"]["Name"] = [[TeleportOnClick]];
+G2L["1f"] = Instance.new("LocalScript", G2L["1a"]);
+G2L["1f"]["Name"] = [[TeleportOnClick]];
 
 
 -- StarterGui.eat.ugi.Frame.btnefe
-G2L["1f"] = Instance.new("Frame", G2L["8"]);
-G2L["1f"]["BorderSizePixel"] = 0;
-G2L["1f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1f"]["Size"] = UDim2.new(0.32081, 0, 0.17043, 0);
-G2L["1f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1f"]["Name"] = [[btnefe]];
-G2L["1f"]["BackgroundTransparency"] = 1;
+G2L["20"] = Instance.new("Frame", G2L["8"]);
+G2L["20"]["BorderSizePixel"] = 0;
+G2L["20"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["20"]["Size"] = UDim2.new(0.32081, 0, 0.17043, 0);
+G2L["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20"]["Name"] = [[btnefe]];
+G2L["20"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.eat.ugi.Frame.btnefe.UIStroke
-G2L["20"] = Instance.new("UIStroke", G2L["1f"]);
-G2L["20"]["Thickness"] = 2.4;
-G2L["20"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["21"] = Instance.new("UIStroke", G2L["20"]);
+G2L["21"]["Thickness"] = 2.4;
+G2L["21"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
 -- StarterGui.eat.ugi.Frame.btnefe.UIStroke.UIGradient
-G2L["21"] = Instance.new("UIGradient", G2L["20"]);
-G2L["21"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(39, 39, 39)),ColorSequenceKeypoint.new(0.284, Color3.fromRGB(41, 41, 41)),ColorSequenceKeypoint.new(0.486, Color3.fromRGB(75, 255, 244)),ColorSequenceKeypoint.new(0.785, Color3.fromRGB(41, 41, 41)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(43, 43, 43))};
+G2L["22"] = Instance.new("UIGradient", G2L["21"]);
+G2L["22"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(39, 39, 39)),ColorSequenceKeypoint.new(0.284, Color3.fromRGB(41, 41, 41)),ColorSequenceKeypoint.new(0.486, Color3.fromRGB(75, 255, 244)),ColorSequenceKeypoint.new(0.785, Color3.fromRGB(41, 41, 41)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(43, 43, 43))};
 
 
 -- StarterGui.eat.ugi.Frame.btnefe.UIStroke.UIGradient.LocalScript
-G2L["22"] = Instance.new("LocalScript", G2L["21"]);
+G2L["23"] = Instance.new("LocalScript", G2L["22"]);
 
 
 
 -- StarterGui.eat.ugi.Frame.btnefe.UICorner
-G2L["23"] = Instance.new("UICorner", G2L["1f"]);
+G2L["24"] = Instance.new("UICorner", G2L["20"]);
 
 
 
 -- StarterGui.eat.ugi.Frame.btnefe.TextButton
-G2L["24"] = Instance.new("TextButton", G2L["1f"]);
-G2L["24"]["TextWrapped"] = true;
-G2L["24"]["BorderSizePixel"] = 0;
-G2L["24"]["TextTransparency"] = 1;
-G2L["24"]["TextSize"] = 14;
-G2L["24"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["24"]["TextScaled"] = true;
-G2L["24"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["24"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["24"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["24"]["BackgroundTransparency"] = 1;
-G2L["24"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25"] = Instance.new("TextButton", G2L["20"]);
+G2L["25"]["TextWrapped"] = true;
+G2L["25"]["BorderSizePixel"] = 0;
+G2L["25"]["TextTransparency"] = 1;
+G2L["25"]["TextSize"] = 14;
+G2L["25"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25"]["TextScaled"] = true;
+G2L["25"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["25"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["25"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["25"]["BackgroundTransparency"] = 1;
+G2L["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
 
 -- StarterGui.eat.ugi.Frame.btnefe.TextButton.UIStroke
-G2L["25"] = Instance.new("UIStroke", G2L["24"]);
-G2L["25"]["Thickness"] = 0.9;
-G2L["25"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["26"] = Instance.new("UIStroke", G2L["25"]);
+G2L["26"]["Thickness"] = 0.9;
+G2L["26"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
 -- StarterGui.eat.ugi.Frame.btnefe.TextButton.UIStroke.UIGradient
-G2L["26"] = Instance.new("UIGradient", G2L["25"]);
-G2L["26"]["Offset"] = Vector2.new(0, 2);
-G2L["26"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.284, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.486, Color3.fromRGB(75, 255, 244)),ColorSequenceKeypoint.new(0.785, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+G2L["27"] = Instance.new("UIGradient", G2L["26"]);
+G2L["27"]["Offset"] = Vector2.new(0, 2);
+G2L["27"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.284, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.486, Color3.fromRGB(75, 255, 244)),ColorSequenceKeypoint.new(0.785, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
 
 -- StarterGui.eat.ugi.Frame.btnefe.TextButton.UIStroke.UIGradient.LocalScript
-G2L["27"] = Instance.new("LocalScript", G2L["26"]);
+G2L["28"] = Instance.new("LocalScript", G2L["27"]);
 
 
 
 -- StarterGui.eat.ugi.Frame.btnefe.TextButton.UIPadding
-G2L["28"] = Instance.new("UIPadding", G2L["24"]);
-G2L["28"]["PaddingTop"] = UDim.new(0, 5);
-G2L["28"]["PaddingBottom"] = UDim.new(0, 7);
+G2L["29"] = Instance.new("UIPadding", G2L["25"]);
+G2L["29"]["PaddingTop"] = UDim.new(0, 5);
+G2L["29"]["PaddingBottom"] = UDim.new(0, 7);
 
 
 -- StarterGui.eat.ugi.Frame.btnefe
-G2L["29"] = Instance.new("Frame", G2L["8"]);
-G2L["29"]["BorderSizePixel"] = 0;
-G2L["29"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["29"]["Size"] = UDim2.new(0.32081, 0, 0.17043, 0);
-G2L["29"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["29"]["Name"] = [[btnefe]];
-G2L["29"]["BackgroundTransparency"] = 1;
+G2L["2a"] = Instance.new("Frame", G2L["8"]);
+G2L["2a"]["BorderSizePixel"] = 0;
+G2L["2a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2a"]["Size"] = UDim2.new(0.32081, 0, 0.17043, 0);
+G2L["2a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2a"]["Name"] = [[btnefe]];
+G2L["2a"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.eat.ugi.Frame.btnefe.UIStroke
-G2L["2a"] = Instance.new("UIStroke", G2L["29"]);
-G2L["2a"]["Thickness"] = 2.4;
-G2L["2a"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["2b"] = Instance.new("UIStroke", G2L["2a"]);
+G2L["2b"]["Thickness"] = 2.4;
+G2L["2b"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
 -- StarterGui.eat.ugi.Frame.btnefe.UIStroke.UIGradient
-G2L["2b"] = Instance.new("UIGradient", G2L["2a"]);
-G2L["2b"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(39, 39, 39)),ColorSequenceKeypoint.new(0.284, Color3.fromRGB(41, 41, 41)),ColorSequenceKeypoint.new(0.486, Color3.fromRGB(75, 255, 244)),ColorSequenceKeypoint.new(0.785, Color3.fromRGB(41, 41, 41)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(43, 43, 43))};
+G2L["2c"] = Instance.new("UIGradient", G2L["2b"]);
+G2L["2c"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(39, 39, 39)),ColorSequenceKeypoint.new(0.284, Color3.fromRGB(41, 41, 41)),ColorSequenceKeypoint.new(0.486, Color3.fromRGB(75, 255, 244)),ColorSequenceKeypoint.new(0.785, Color3.fromRGB(41, 41, 41)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(43, 43, 43))};
 
 
 -- StarterGui.eat.ugi.Frame.btnefe.UIStroke.UIGradient.LocalScript
-G2L["2c"] = Instance.new("LocalScript", G2L["2b"]);
+G2L["2d"] = Instance.new("LocalScript", G2L["2c"]);
 
 
 
 -- StarterGui.eat.ugi.Frame.btnefe.UICorner
-G2L["2d"] = Instance.new("UICorner", G2L["29"]);
+G2L["2e"] = Instance.new("UICorner", G2L["2a"]);
 
 
 
 -- StarterGui.eat.ugi.Frame.btnefe.TextButton
-G2L["2e"] = Instance.new("TextButton", G2L["29"]);
-G2L["2e"]["TextWrapped"] = true;
-G2L["2e"]["BorderSizePixel"] = 0;
-G2L["2e"]["TextTransparency"] = 1;
-G2L["2e"]["TextSize"] = 14;
-G2L["2e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2e"]["TextScaled"] = true;
-G2L["2e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2e"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["2e"]["BackgroundTransparency"] = 1;
-G2L["2e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f"] = Instance.new("TextButton", G2L["2a"]);
+G2L["2f"]["TextWrapped"] = true;
+G2L["2f"]["BorderSizePixel"] = 0;
+G2L["2f"]["TextTransparency"] = 1;
+G2L["2f"]["TextSize"] = 14;
+G2L["2f"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f"]["TextScaled"] = true;
+G2L["2f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2f"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["2f"]["BackgroundTransparency"] = 1;
+G2L["2f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
 
 -- StarterGui.eat.ugi.Frame.btnefe.TextButton.UIStroke
-G2L["2f"] = Instance.new("UIStroke", G2L["2e"]);
-G2L["2f"]["Thickness"] = 0.9;
-G2L["2f"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["30"] = Instance.new("UIStroke", G2L["2f"]);
+G2L["30"]["Thickness"] = 0.9;
+G2L["30"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
 -- StarterGui.eat.ugi.Frame.btnefe.TextButton.UIStroke.UIGradient
-G2L["30"] = Instance.new("UIGradient", G2L["2f"]);
-G2L["30"]["Offset"] = Vector2.new(0, 2);
-G2L["30"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.284, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.486, Color3.fromRGB(75, 255, 244)),ColorSequenceKeypoint.new(0.785, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+G2L["31"] = Instance.new("UIGradient", G2L["30"]);
+G2L["31"]["Offset"] = Vector2.new(0, 2);
+G2L["31"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.284, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.486, Color3.fromRGB(75, 255, 244)),ColorSequenceKeypoint.new(0.785, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
 
 -- StarterGui.eat.ugi.Frame.btnefe.TextButton.UIStroke.UIGradient.LocalScript
-G2L["31"] = Instance.new("LocalScript", G2L["30"]);
+G2L["32"] = Instance.new("LocalScript", G2L["31"]);
 
 
 
 -- StarterGui.eat.ugi.Frame.btnefe.TextButton.UIPadding
-G2L["32"] = Instance.new("UIPadding", G2L["2e"]);
-G2L["32"]["PaddingTop"] = UDim.new(0, 5);
-G2L["32"]["PaddingBottom"] = UDim.new(0, 7);
+G2L["33"] = Instance.new("UIPadding", G2L["2f"]);
+G2L["33"]["PaddingTop"] = UDim.new(0, 5);
+G2L["33"]["PaddingBottom"] = UDim.new(0, 7);
 
 
 -- StarterGui.eat.ugi.Frame.btnefe
-G2L["33"] = Instance.new("Frame", G2L["8"]);
-G2L["33"]["BorderSizePixel"] = 0;
-G2L["33"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["33"]["Size"] = UDim2.new(0.32081, 0, 0.17043, 0);
-G2L["33"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["33"]["Name"] = [[btnefe]];
-G2L["33"]["BackgroundTransparency"] = 1;
+G2L["34"] = Instance.new("Frame", G2L["8"]);
+G2L["34"]["BorderSizePixel"] = 0;
+G2L["34"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["34"]["Size"] = UDim2.new(0.32081, 0, 0.17043, 0);
+G2L["34"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["34"]["Name"] = [[btnefe]];
+G2L["34"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.eat.ugi.Frame.btnefe.UIStroke
-G2L["34"] = Instance.new("UIStroke", G2L["33"]);
-G2L["34"]["Thickness"] = 2.4;
-G2L["34"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["35"] = Instance.new("UIStroke", G2L["34"]);
+G2L["35"]["Thickness"] = 2.4;
+G2L["35"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
 -- StarterGui.eat.ugi.Frame.btnefe.UIStroke.UIGradient
-G2L["35"] = Instance.new("UIGradient", G2L["34"]);
-G2L["35"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(39, 39, 39)),ColorSequenceKeypoint.new(0.284, Color3.fromRGB(41, 41, 41)),ColorSequenceKeypoint.new(0.486, Color3.fromRGB(75, 255, 244)),ColorSequenceKeypoint.new(0.785, Color3.fromRGB(41, 41, 41)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(43, 43, 43))};
+G2L["36"] = Instance.new("UIGradient", G2L["35"]);
+G2L["36"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(39, 39, 39)),ColorSequenceKeypoint.new(0.284, Color3.fromRGB(41, 41, 41)),ColorSequenceKeypoint.new(0.486, Color3.fromRGB(75, 255, 244)),ColorSequenceKeypoint.new(0.785, Color3.fromRGB(41, 41, 41)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(43, 43, 43))};
 
 
 -- StarterGui.eat.ugi.Frame.btnefe.UIStroke.UIGradient.LocalScript
-G2L["36"] = Instance.new("LocalScript", G2L["35"]);
+G2L["37"] = Instance.new("LocalScript", G2L["36"]);
 
 
 
 -- StarterGui.eat.ugi.Frame.btnefe.UICorner
-G2L["37"] = Instance.new("UICorner", G2L["33"]);
+G2L["38"] = Instance.new("UICorner", G2L["34"]);
 
 
 
 -- StarterGui.eat.ugi.Frame.btnefe.TextButton
-G2L["38"] = Instance.new("TextButton", G2L["33"]);
-G2L["38"]["TextWrapped"] = true;
-G2L["38"]["BorderSizePixel"] = 0;
-G2L["38"]["TextTransparency"] = 1;
-G2L["38"]["TextSize"] = 14;
-G2L["38"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["38"]["TextScaled"] = true;
-G2L["38"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["38"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["38"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["38"]["BackgroundTransparency"] = 1;
-G2L["38"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["39"] = Instance.new("TextButton", G2L["34"]);
+G2L["39"]["TextWrapped"] = true;
+G2L["39"]["BorderSizePixel"] = 0;
+G2L["39"]["TextTransparency"] = 1;
+G2L["39"]["TextSize"] = 14;
+G2L["39"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["39"]["TextScaled"] = true;
+G2L["39"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["39"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["39"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["39"]["BackgroundTransparency"] = 1;
+G2L["39"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
 
 -- StarterGui.eat.ugi.Frame.btnefe.TextButton.UIStroke
-G2L["39"] = Instance.new("UIStroke", G2L["38"]);
-G2L["39"]["Thickness"] = 0.9;
-G2L["39"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["3a"] = Instance.new("UIStroke", G2L["39"]);
+G2L["3a"]["Thickness"] = 0.9;
+G2L["3a"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
 -- StarterGui.eat.ugi.Frame.btnefe.TextButton.UIStroke.UIGradient
-G2L["3a"] = Instance.new("UIGradient", G2L["39"]);
-G2L["3a"]["Offset"] = Vector2.new(0, 2);
-G2L["3a"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.284, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.486, Color3.fromRGB(75, 255, 244)),ColorSequenceKeypoint.new(0.785, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+G2L["3b"] = Instance.new("UIGradient", G2L["3a"]);
+G2L["3b"]["Offset"] = Vector2.new(0, 2);
+G2L["3b"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.284, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.486, Color3.fromRGB(75, 255, 244)),ColorSequenceKeypoint.new(0.785, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
 
 -- StarterGui.eat.ugi.Frame.btnefe.TextButton.UIStroke.UIGradient.LocalScript
-G2L["3b"] = Instance.new("LocalScript", G2L["3a"]);
+G2L["3c"] = Instance.new("LocalScript", G2L["3b"]);
 
 
 
 -- StarterGui.eat.ugi.Frame.btnefe.TextButton.UIPadding
-G2L["3c"] = Instance.new("UIPadding", G2L["38"]);
-G2L["3c"]["PaddingTop"] = UDim.new(0, 5);
-G2L["3c"]["PaddingBottom"] = UDim.new(0, 7);
+G2L["3d"] = Instance.new("UIPadding", G2L["39"]);
+G2L["3d"]["PaddingTop"] = UDim.new(0, 5);
+G2L["3d"]["PaddingBottom"] = UDim.new(0, 7);
 
 
 -- StarterGui.eat.ugi.Frame.btnefe
-G2L["3d"] = Instance.new("Frame", G2L["8"]);
-G2L["3d"]["BorderSizePixel"] = 0;
-G2L["3d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3d"]["Size"] = UDim2.new(0.32081, 0, 0.17043, 0);
-G2L["3d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3d"]["Name"] = [[btnefe]];
-G2L["3d"]["BackgroundTransparency"] = 1;
+G2L["3e"] = Instance.new("Frame", G2L["8"]);
+G2L["3e"]["BorderSizePixel"] = 0;
+G2L["3e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3e"]["Size"] = UDim2.new(0.32081, 0, 0.17043, 0);
+G2L["3e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3e"]["Name"] = [[btnefe]];
+G2L["3e"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.eat.ugi.Frame.btnefe.UIStroke
-G2L["3e"] = Instance.new("UIStroke", G2L["3d"]);
-G2L["3e"]["Thickness"] = 2.4;
-G2L["3e"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["3f"] = Instance.new("UIStroke", G2L["3e"]);
+G2L["3f"]["Thickness"] = 2.4;
+G2L["3f"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
 -- StarterGui.eat.ugi.Frame.btnefe.UIStroke.UIGradient
-G2L["3f"] = Instance.new("UIGradient", G2L["3e"]);
-G2L["3f"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(39, 39, 39)),ColorSequenceKeypoint.new(0.284, Color3.fromRGB(41, 41, 41)),ColorSequenceKeypoint.new(0.486, Color3.fromRGB(75, 255, 244)),ColorSequenceKeypoint.new(0.785, Color3.fromRGB(41, 41, 41)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(43, 43, 43))};
+G2L["40"] = Instance.new("UIGradient", G2L["3f"]);
+G2L["40"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(39, 39, 39)),ColorSequenceKeypoint.new(0.284, Color3.fromRGB(41, 41, 41)),ColorSequenceKeypoint.new(0.486, Color3.fromRGB(75, 255, 244)),ColorSequenceKeypoint.new(0.785, Color3.fromRGB(41, 41, 41)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(43, 43, 43))};
 
 
 -- StarterGui.eat.ugi.Frame.btnefe.UIStroke.UIGradient.LocalScript
-G2L["40"] = Instance.new("LocalScript", G2L["3f"]);
+G2L["41"] = Instance.new("LocalScript", G2L["40"]);
 
 
 
 -- StarterGui.eat.ugi.Frame.btnefe.UICorner
-G2L["41"] = Instance.new("UICorner", G2L["3d"]);
+G2L["42"] = Instance.new("UICorner", G2L["3e"]);
 
 
 
 -- StarterGui.eat.ugi.Frame.btnefe.TextButton
-G2L["42"] = Instance.new("TextButton", G2L["3d"]);
-G2L["42"]["TextWrapped"] = true;
-G2L["42"]["BorderSizePixel"] = 0;
-G2L["42"]["TextTransparency"] = 1;
-G2L["42"]["TextSize"] = 14;
-G2L["42"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["42"]["TextScaled"] = true;
-G2L["42"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["42"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["42"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["42"]["BackgroundTransparency"] = 1;
-G2L["42"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["43"] = Instance.new("TextButton", G2L["3e"]);
+G2L["43"]["TextWrapped"] = true;
+G2L["43"]["BorderSizePixel"] = 0;
+G2L["43"]["TextTransparency"] = 1;
+G2L["43"]["TextSize"] = 14;
+G2L["43"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["43"]["TextScaled"] = true;
+G2L["43"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["43"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["43"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["43"]["BackgroundTransparency"] = 1;
+G2L["43"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
 
 -- StarterGui.eat.ugi.Frame.btnefe.TextButton.UIStroke
-G2L["43"] = Instance.new("UIStroke", G2L["42"]);
-G2L["43"]["Thickness"] = 0.9;
-G2L["43"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["44"] = Instance.new("UIStroke", G2L["43"]);
+G2L["44"]["Thickness"] = 0.9;
+G2L["44"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
 -- StarterGui.eat.ugi.Frame.btnefe.TextButton.UIStroke.UIGradient
-G2L["44"] = Instance.new("UIGradient", G2L["43"]);
-G2L["44"]["Offset"] = Vector2.new(0, 2);
-G2L["44"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.284, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.486, Color3.fromRGB(75, 255, 244)),ColorSequenceKeypoint.new(0.785, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+G2L["45"] = Instance.new("UIGradient", G2L["44"]);
+G2L["45"]["Offset"] = Vector2.new(0, 2);
+G2L["45"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.284, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.486, Color3.fromRGB(75, 255, 244)),ColorSequenceKeypoint.new(0.785, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
 
 -- StarterGui.eat.ugi.Frame.btnefe.TextButton.UIStroke.UIGradient.LocalScript
-G2L["45"] = Instance.new("LocalScript", G2L["44"]);
+G2L["46"] = Instance.new("LocalScript", G2L["45"]);
 
 
 
 -- StarterGui.eat.ugi.Frame.btnefe.TextButton.UIPadding
-G2L["46"] = Instance.new("UIPadding", G2L["42"]);
-G2L["46"]["PaddingTop"] = UDim.new(0, 5);
-G2L["46"]["PaddingBottom"] = UDim.new(0, 7);
+G2L["47"] = Instance.new("UIPadding", G2L["43"]);
+G2L["47"]["PaddingTop"] = UDim.new(0, 5);
+G2L["47"]["PaddingBottom"] = UDim.new(0, 7);
 
 
 -- StarterGui.eat.ugi.TextButton
-G2L["47"] = Instance.new("TextButton", G2L["2"]);
-G2L["47"]["TextWrapped"] = true;
-G2L["47"]["BorderSizePixel"] = 0;
-G2L["47"]["TextTransparency"] = 1;
-G2L["47"]["TextSize"] = 14;
-G2L["47"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["47"]["TextScaled"] = true;
-G2L["47"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["47"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["47"]["Size"] = UDim2.new(1, 0, 0.12169, 0);
-G2L["47"]["BackgroundTransparency"] = 1;
-G2L["47"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["47"]["Text"] = [[ILDK HUB : EAT SAND 1.0]];
-G2L["47"]["Position"] = UDim2.new(0, 0, -0, 0);
+G2L["48"] = Instance.new("TextButton", G2L["2"]);
+G2L["48"]["TextWrapped"] = true;
+G2L["48"]["BorderSizePixel"] = 0;
+G2L["48"]["TextTransparency"] = 1;
+G2L["48"]["TextSize"] = 14;
+G2L["48"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["48"]["TextScaled"] = true;
+G2L["48"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["48"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["48"]["Size"] = UDim2.new(1, 0, 0.12169, 0);
+G2L["48"]["BackgroundTransparency"] = 1;
+G2L["48"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["48"]["Text"] = [[ILDK HUB : EAT SAND 1.1]];
+G2L["48"]["Position"] = UDim2.new(0, 0, -0, 0);
 
 
 -- StarterGui.eat.ugi.TextButton.UIStroke
-G2L["48"] = Instance.new("UIStroke", G2L["47"]);
-G2L["48"]["Thickness"] = 0.9;
-G2L["48"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["49"] = Instance.new("UIStroke", G2L["48"]);
+G2L["49"]["Thickness"] = 0.9;
+G2L["49"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
 -- StarterGui.eat.ugi.TextButton.UIStroke.UIGradient
-G2L["49"] = Instance.new("UIGradient", G2L["48"]);
-G2L["49"]["Offset"] = Vector2.new(0, 2);
-G2L["49"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.284, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.486, Color3.fromRGB(75, 255, 244)),ColorSequenceKeypoint.new(0.785, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+G2L["4a"] = Instance.new("UIGradient", G2L["49"]);
+G2L["4a"]["Offset"] = Vector2.new(0, 2);
+G2L["4a"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.284, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.486, Color3.fromRGB(75, 255, 244)),ColorSequenceKeypoint.new(0.785, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
 
 -- StarterGui.eat.ugi.TextButton.UIStroke.UIGradient.LocalScript
-G2L["4a"] = Instance.new("LocalScript", G2L["49"]);
+G2L["4b"] = Instance.new("LocalScript", G2L["4a"]);
 
 
 
 -- StarterGui.eat.ugi.TextButton.UIPadding
-G2L["4b"] = Instance.new("UIPadding", G2L["47"]);
-G2L["4b"]["PaddingTop"] = UDim.new(0, 5);
-G2L["4b"]["PaddingBottom"] = UDim.new(0, 7);
+G2L["4c"] = Instance.new("UIPadding", G2L["48"]);
+G2L["4c"]["PaddingTop"] = UDim.new(0, 5);
+G2L["4c"]["PaddingBottom"] = UDim.new(0, 7);
 
 
 -- StarterGui.eat.ugi.TextButton.TeleportOnClick
-G2L["4c"] = Instance.new("LocalScript", G2L["47"]);
-G2L["4c"]["Name"] = [[TeleportOnClick]];
+G2L["4d"] = Instance.new("LocalScript", G2L["48"]);
+G2L["4d"]["Name"] = [[TeleportOnClick]];
 
 
 -- StarterGui.eat.ugi.UIStroke.UIGradient.LocalScript
@@ -543,7 +557,7 @@ local script = G2L["7"];
 	script.Parent.Draggable = true
 end;
 task.spawn(C_7);
--- StarterGui.eat.ugi.Frame.btnefe.UIStroke.UIGradient.LocalScript
+-- StarterGui.eat.ugi.Frame.uf.UIStroke.UIGradient.LocalScript
 local function C_d()
 local script = G2L["d"];
 	while true do
@@ -552,7 +566,7 @@ local script = G2L["d"];
 	end
 end;
 task.spawn(C_d);
--- StarterGui.eat.ugi.Frame.btnefe.TextButton.UIStroke.UIGradient.LocalScript
+-- StarterGui.eat.ugi.Frame.uf.TextButton.UIStroke.UIGradient.LocalScript
 local function C_12()
 local script = G2L["12"];
 	while true do
@@ -561,27 +575,49 @@ local script = G2L["12"];
 	end
 end;
 task.spawn(C_12);
+-- StarterGui.eat.ugi.Frame.uf.TextButton.TeleportOnClick
+local function C_14()
+local script = G2L["14"];
+	local button = script.Parent
+	local Players = game:GetService("Players")
+	local teleportCFrame = CFrame.new(-75.29405975341797, -16.98878288269043, -400.965087890625)
+	
+	button.MouseButton1Click:Connect(function()
+	    local player = Players.LocalPlayer
+	    local character = player.Character or player.CharacterAdded:Wait()
+	    local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+	    
+	    local originalCFrame = humanoidRootPart.CFrame
+	    humanoidRootPart.CFrame = teleportCFrame
+	    
+	    task.wait()  -- Wait for 5 seconds before teleporting back
+	    humanoidRootPart.CFrame = originalCFrame
+	end)
+	
+	
+end;
+task.spawn(C_14);
 -- StarterGui.eat.ugi.Frame.lava.UIStroke.UIGradient.LocalScript
-local function C_17()
-local script = G2L["17"];
+local function C_18()
+local script = G2L["18"];
 	while true do
 		wait()
 		script.Parent.Rotation += 1.5
 	end
 end;
-task.spawn(C_17);
+task.spawn(C_18);
 -- StarterGui.eat.ugi.Frame.lava.TextButton.UIStroke.UIGradient.LocalScript
-local function C_1c()
-local script = G2L["1c"];
+local function C_1d()
+local script = G2L["1d"];
 	while true do
 		wait()
 		script.Parent.Rotation += 1.5
 	end
 end;
-task.spawn(C_1c);
+task.spawn(C_1d);
 -- StarterGui.eat.ugi.Frame.lava.TextButton.TeleportOnClick
-local function C_1e()
-local script = G2L["1e"];
+local function C_1f()
+local script = G2L["1f"];
 	local button = script.Parent
 	local Players = game:GetService("Players")
 	local teleportCFrame = CFrame.new(-469.0196228027344, 70.55696868896484, 350.0978698730469)
@@ -600,91 +636,91 @@ local script = G2L["1e"];
 	
 	
 end;
-task.spawn(C_1e);
+task.spawn(C_1f);
 -- StarterGui.eat.ugi.Frame.btnefe.UIStroke.UIGradient.LocalScript
-local function C_22()
-local script = G2L["22"];
+local function C_23()
+local script = G2L["23"];
 	while true do
 		wait()
 		script.Parent.Rotation += 1.5
 	end
 end;
-task.spawn(C_22);
+task.spawn(C_23);
 -- StarterGui.eat.ugi.Frame.btnefe.TextButton.UIStroke.UIGradient.LocalScript
-local function C_27()
-local script = G2L["27"];
+local function C_28()
+local script = G2L["28"];
 	while true do
 		wait()
 		script.Parent.Rotation += 1.5
 	end
 end;
-task.spawn(C_27);
+task.spawn(C_28);
 -- StarterGui.eat.ugi.Frame.btnefe.UIStroke.UIGradient.LocalScript
-local function C_2c()
-local script = G2L["2c"];
+local function C_2d()
+local script = G2L["2d"];
 	while true do
 		wait()
 		script.Parent.Rotation += 1.5
 	end
 end;
-task.spawn(C_2c);
+task.spawn(C_2d);
 -- StarterGui.eat.ugi.Frame.btnefe.TextButton.UIStroke.UIGradient.LocalScript
-local function C_31()
-local script = G2L["31"];
+local function C_32()
+local script = G2L["32"];
 	while true do
 		wait()
 		script.Parent.Rotation += 1.5
 	end
 end;
-task.spawn(C_31);
+task.spawn(C_32);
 -- StarterGui.eat.ugi.Frame.btnefe.UIStroke.UIGradient.LocalScript
-local function C_36()
-local script = G2L["36"];
+local function C_37()
+local script = G2L["37"];
 	while true do
 		wait()
 		script.Parent.Rotation += 1.5
 	end
 end;
-task.spawn(C_36);
+task.spawn(C_37);
 -- StarterGui.eat.ugi.Frame.btnefe.TextButton.UIStroke.UIGradient.LocalScript
-local function C_3b()
-local script = G2L["3b"];
+local function C_3c()
+local script = G2L["3c"];
 	while true do
 		wait()
 		script.Parent.Rotation += 1.5
 	end
 end;
-task.spawn(C_3b);
+task.spawn(C_3c);
 -- StarterGui.eat.ugi.Frame.btnefe.UIStroke.UIGradient.LocalScript
-local function C_40()
-local script = G2L["40"];
+local function C_41()
+local script = G2L["41"];
 	while true do
 		wait()
 		script.Parent.Rotation += 1.5
 	end
 end;
-task.spawn(C_40);
+task.spawn(C_41);
 -- StarterGui.eat.ugi.Frame.btnefe.TextButton.UIStroke.UIGradient.LocalScript
-local function C_45()
-local script = G2L["45"];
+local function C_46()
+local script = G2L["46"];
 	while true do
 		wait()
 		script.Parent.Rotation += 1.5
 	end
 end;
-task.spawn(C_45);
+task.spawn(C_46);
 -- StarterGui.eat.ugi.TextButton.UIStroke.UIGradient.LocalScript
-local function C_4a()
-local script = G2L["4a"];
+local function C_4b()
+local script = G2L["4b"];
 	while true do
 		wait()
 		script.Parent.Rotation += 1.5
 	end
 end;
-task.spawn(C_4a);
+task.spawn(C_4b);
 -- StarterGui.eat.ugi.TextButton.TeleportOnClick
-local function C_4c()
-local script = G2L["4c"];
+local function C_4d()
+local script = G2L["4d"];
 	local button = script.Parent
 	local Players = game:GetService("Players")
 	local teleportCFrame = CFrame.new(-469.0196228027344, 70.55696868896484, 350.0978698730469)
@@ -703,6 +739,6 @@ local script = G2L["4c"];
 	
 	
 end;
-task.spawn(C_4c);
+task.spawn(C_4d);
 
 return G2L["1"], require;
